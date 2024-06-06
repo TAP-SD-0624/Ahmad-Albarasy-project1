@@ -1,9 +1,251 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>initial</title>
+		<title>Home</title>
+		<meta description="The homepage of the website">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="variables.css">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		Test
+		<header class="header">
+			<div class="brand">Web Topics</div>
+				<div class="buttons">
+						<button class="button">
+							<input type="checkbox" style="display:none;" class="dark-mode">  
+							<img src="icons/moon.svg" class="icon" alt="Moon Logo">
+							<span class="button-text">Dark Mode</span>
+						</button>
+						<button class="button">
+							<img src="icons/heart.svg" class="icon" alt="Heart Logo">
+							<span class="button-text">Favourites</span>
+						</button>
+				</div>
+		</header>
+		<section class="intro">
+			<div class="intro-container">
+				<h1>Welcome to our website!</h1>
+				<p>We have a design that's fresh, modern, and easy to use</p>
+			</div>
+		</section>
+		<main class="main">
+			<div class="search-container">
+        <input type="text" class="search-input" placeholder="Search the website...">
+        <div class="sort-filter">
+            <label for="sort">Sort by:</label>
+            <select id="sort" class="dropdown">
+                <option>Default</option>
+            </select>
+            <label for="filter">Filter by:</label>
+            <select id="filter" class="dropdown">
+                <option>Default</option>
+            </select>
+        </div>
+    </div>
+		<h2 class="results-number">"24" Web Topics Found</h2>
+		<div class="results-container">
+			<div class="card">
+				<img src="images/html.png" alt="HTML">
+				<h3 class="category">Web Development Languages</h3>
+				<h2>HTML</h2>
+				<div class="rating">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+				</div>
+				<p>Author: Sarah Smith</p>
+		</div>
+		
+		<div class="card">
+				<img src="images/css.webp" alt="CSS">
+				<h3 class="category">Web Development Languages</h3>
+				<h2>CSS</h2>
+				<div class="rating">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/half-star.svg" alt="half-star" class="icon">
+				</div>
+				<p>Author: David Lee</p>
+		</div>
+		
+		<div class="card">
+				<img src="images/javascript.jpg" alt="JavaScript">
+				<h3 class="category">Web Development Languages</h3>
+				<h2>JavaScript</h2>
+				<div class="rating">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+				</div>
+				<p>Author: Emily Chen</p>
+		</div>
+		
+		<div class="card">
+				<img src="images/jquery.png" alt="jQuery">
+				<h3 class="category">Frontend Frameworks and Libraries</h3>
+				<h2>jQuery</h2>
+				<div class="rating">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/half-star.svg" alt="half-star" class="icon">
+				</div>
+				<p>Author: John Johnson</p>
+		</div>
+		
+		<div class="card">
+				<img src="images/angular.png" alt="Angular">
+				<h3 class="category">Frontend Frameworks and Libraries</h3>
+				<h2>Angular</h2>
+				<div class="rating">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/half-star.svg" alt="half-star" class="icon">
+						<img src="icons/half-star.svg" alt="half-star" class="icon">
+				</div>
+				<p>Author: Jessica Davis</p>
+		</div>
+		
+		<div class="card">
+				<img src="images/react.webp" alt="React">
+				<h3 class="category">Frontend Frameworks and Libraries</h3>
+				<h2>React</h2>
+				<div class="rating">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/half-star.svg" alt="half-star" class="icon">
+				</div>
+				<p>Author: Daniel Brown</p>
+		</div>
+		
+		<div class="card">
+				<img src="images/vuejs.jpeg" alt="Vue.js">
+				<h3 class="category">Frontend Frameworks and Libraries</h3>
+				<h2>Vue.js</h2>
+				<div class="rating">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/half-star.svg" alt="half-star" class="icon">
+						<img src="icons/half-star.svg" alt="half-star" class="icon">
+				</div>
+				<p>Author: Ava Jones</p>
+		</div>
+		
+		<div class="card">
+				<img src="images/nodejs.webp" alt="Node.js">
+				<h3 class="category">Backend Frameworks and Libraries</h3>
+				<h2>Node.js</h2>
+				<div class="rating">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/half-star.svg" alt="half-star" class="icon">
+				</div>
+				<p>Author: Michael Kim</p>
+		</div>
+		
+		<div class="card">
+				<img src="images/expressjs.webp" alt="Express.js">
+				<h3 class="category">Backend Frameworks and Libraries</h3>
+				<h2>Express.js</h2>
+				<div class="rating">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+				</div>
+				<p>Author: Sophia Rodriguez</p>
+		</div>
+		
+		<div class="card">
+				<img src="images/ruby.jpeg" alt="Ruby on Rails">
+				<h3 class="category">Backend Frameworks and Libraries</h3>
+				<h2>Ruby on Rails</h2>
+				<div class="rating">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/half-star.svg" alt="half-star" class="icon">
+						<img src="icons/half-star.svg" alt="half-star" class="icon">
+				</div>
+				<p>Author: William Lee</p>
+		</div>
+		
+		<div class="card">
+				<img src="images/django.jpeg" alt="Django">
+				<h3 class="category">Backend Frameworks and Libraries</h3>
+				<h2>Django</h2>
+				<div class="rating">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+				</div>
+				<p>Author: Olivia Martinez</p>
+		</div>
+		
+		<div class="card">
+				<img src="images/flask.webp" alt="Flask">
+				<h3 class="category">Backend Frameworks and Libraries</h3>
+				<h2>Flask</h2>
+				<div class="rating">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/half-star.svg" alt="half-star" class="icon">
+						<img src="icons/half-star.svg" alt="half-star" class="icon">
+				</div>
+				<p>Author: Ethan Thompson</p>
+		</div>
+		
+		<div class="card">
+				<img src="images/sql.png" alt="SQL">
+				<h3 class="category">Databases and APIs</h3>
+				<h2>SQL</h2>
+				<div class="rating">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+				</div>
+				<p>Author: Isabella Wilson</p>
+		</div>
+		<div class="card">
+				<img src="images/graphql.png" alt="GraphQL">
+				<h3 class="category">Databases and APIs</h3>
+				<h2>GraphQL</h2>
+				<div class="rating">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/star.svg" alt="star" class="icon">
+						<img src="icons/half-star.svg" alt="half-star" class="icon">
+						<img src="icons/half-star.svg" alt="half-star" class="icon">
+				</div>
+				<p>Author: Lucas White</p>
+		</div>
+		
+	</div>
+		</main>
+		<footer class="footer">
+			Developed with ❤️ &#169; 2024
+		</footer>
 	</body>
 </html>
