@@ -129,6 +129,14 @@ body {
     color:var(--brand-secondary);
 }
 
+.subtopics {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    width:30%;
+}
+
 .footer {
     text-align: center;
     color : var(--text-color);
