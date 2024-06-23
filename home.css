@@ -11,66 +11,6 @@ body {
     background-color: var(--bg_body);
 }
 
-.header {
-    /* align-items: center; */
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 20px;
-    background-color: var(--bg_default);
-}
-
-.brand {
-    font-size: 1.5rem;
-    color : var(--brand-primary);
-    font-weight: 500;
-}
-
-.buttons {
-    display: flex;
-    gap: 10px;
-}
-
-.button {
-    padding: 10px 15px;
-    font-size: 1rem;
-    border: 2px solid var(--lines-color);
-    border-radius: 10px;
-    color: var(--body-text);
-    background-color: var(--bg_default);
-}
-
-.button:hover {
-    background-color: var(--bg_body);
-}
-
-.icon {
-    width: 1.2rem;
-    height: 1.2rem;
-}
-
-.intro {
-    padding:5px 0px;
-    background-color: var(--bg_default);
-    display:flex;
-    justify-content: center;
-    
-}
-
-.intro-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.intro h1 {
-    color : var(--brand-secondary);
-    font-weight:700;
-}
-
-.intro p {
-    font-weight: 300;
-    color : var(--text-color);
-}
-
 .main {
     margin: 40px;
     color : var(--text-color);
@@ -91,6 +31,7 @@ body {
     font-size: 1em;
     margin-right: 5px;
     background-color: var(--bg_default);
+    color: var(--text-color);
 }
 
 .search-input::placeholder {

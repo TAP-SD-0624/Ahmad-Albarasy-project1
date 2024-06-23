@@ -5,7 +5,9 @@
 		<meta description="The homepage of the website">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="variables.css">
+		<link rel="stylesheet" type="text/css" href="header.css">
 		<link rel="stylesheet" type="text/css" href="home.css">
+		<link rel="stylesheet" type="text/css" href="favorites.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
@@ -19,18 +21,22 @@
 							<img src="icons/moon.svg" class="icon" alt="Moon Logo">
 							<span class="button-text">Dark Mode</span>
 						</button>
-						<button class="button">
+						<button class="button" id="favoritesButton">
 							<img src="icons/heart.svg" class="icon" alt="Heart Logo">
 							<span class="button-text">Favourites</span>
 						</button>
 				</div>
 		</header>
-		<section class="intro">
-			<div class="intro-container">
-				<h1>Welcome to our website!</h1>
-				<p>We have a design that's fresh, modern, and easy to use</p>
-			</div>
-		</section>
+		<div class="triangles-container">
+			<div class="triangle-b"></div>
+			<div class="triangle-a"></div>
+			<section class="intro">
+				<div class="intro-container">
+					<h1>Welcome to our website!</h1>
+					<p>We have a design that's fresh, modern, and easy to use</p>
+				</div>
+			</section>
+		</div>
 		<main class="main">
 			<div class="search-container updown-margin">
         <input type="text" class="search-input" placeholder="Search the website...">
@@ -153,81 +159,32 @@
 				<p>Author: Sophia Rodriguez</p>
 			</div>
 		</div>
-		
-		<!-- <div class="card">
-				<img src="images/ruby.jpeg" alt="Ruby on Rails">
-				<h3 class="category">Backend Frameworks and Libraries</h3>
-				<h2>Ruby on Rails</h2>
-				<div class="rating">
-						<img src="icons/star.svg" alt="star" class="icon">
-						<img src="icons/star.svg" alt="star" class="icon">
-						<img src="icons/star.svg" alt="star" class="icon">
-						<img src="icons/half-star.svg" alt="half-star" class="icon">
-						<img src="icons/half-star.svg" alt="half-star" class="icon">
-				</div>
-				<p>Author: William Lee</p>
-		</div>
-		
-		<div class="card">
-				<img src="images/django.jpeg" alt="Django">
-				<h3 class="category">Backend Frameworks and Libraries</h3>
-				<h2>Django</h2>
-				<div class="rating">
-						<img src="icons/star.svg" alt="star" class="icon">
-						<img src="icons/star.svg" alt="star" class="icon">
-						<img src="icons/star.svg" alt="star" class="icon">
-						<img src="icons/star.svg" alt="star" class="icon">
-						<img src="icons/star.svg" alt="star" class="icon">
-				</div>
-				<p>Author: Olivia Martinez</p>
-		</div>
-		
-		<div class="card">
-				<img src="images/flask.webp" alt="Flask">
-				<h3 class="category">Backend Frameworks and Libraries</h3>
-				<h2>Flask</h2>
-				<div class="rating">
-						<img src="icons/star.svg" alt="star" class="icon">
-						<img src="icons/star.svg" alt="star" class="icon">
-						<img src="icons/star.svg" alt="star" class="icon">
-						<img src="icons/half-star.svg" alt="half-star" class="icon">
-						<img src="icons/half-star.svg" alt="half-star" class="icon">
-				</div>
-				<p>Author: Ethan Thompson</p>
-		</div>
-		
-		<div class="card">
-				<img src="images/sql.png" alt="SQL">
-				<h3 class="category">Databases and APIs</h3>
-				<h2>SQL</h2>
-				<div class="rating">
-						<img src="icons/star.svg" alt="star" class="icon">
-						<img src="icons/star.svg" alt="star" class="icon">
-						<img src="icons/star.svg" alt="star" class="icon">
-						<img src="icons/star.svg" alt="star" class="icon">
-						<img src="icons/star.svg" alt="star" class="icon">
-				</div>
-				<p>Author: Isabella Wilson</p>
-		</div>
-		<div class="card">
-				<img src="images/graphql.png" alt="GraphQL">
-				<h3 class="category">Databases and APIs</h3>
-				<h2>GraphQL</h2>
-				<div class="rating">
-						<img src="icons/star.svg" alt="star" class="icon">
-						<img src="icons/star.svg" alt="star" class="icon">
-						<img src="icons/star.svg" alt="star" class="icon">
-						<img src="icons/half-star.svg" alt="half-star" class="icon">
-						<img src="icons/half-star.svg" alt="half-star" class="icon">
-				</div>
-				<p>Author: Lucas White</p>
-		</div> -->
-		
 	</div>
 		</main>
 		<footer class="footer">
 			Developed with ❤️ &#169; 2024
 		</footer>
+		<section class="favourites-section" id="favoritesSection">
+			<h2>My Favourite Topics</h2>
+			<div class="favourites-container">
+				<div class="favourite-card">
+					<img src="react-logo.png" alt="React">
+					<div class="favourite-info">
+						<h3>React</h3>
+						<p>Cloud Computing</p>
+						<p>⭐⭐⭐⭐⭐</p>
+					</div>
+				</div>
+				<div class="favourite-card">
+					<img src="cloud-logo.png" alt="Cloud Computing">
+					<div class="favourite-info">
+						<h3>Cloud Computing</h3>
+						<p>Cloud Computing</p>
+						<p>⭐⭐⭐⭐⭐</p>
+					</div>
+				</div>
+			</div>
+		</section>
 		<script src="index.js"></script>
 	</body>
 </html>

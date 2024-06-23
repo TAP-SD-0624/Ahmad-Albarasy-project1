@@ -1,0 +1,73 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background-color: var(--bg_default);
+}
+
+.brand {
+    font-size: 1.5rem;
+    color : var(--brand-primary);
+    font-weight: 500;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    display: flex;
+    gap:5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid var(--lines-color);
+    border-radius: 10px;
+    color: var(--body-text);
+    background-color: var(--bg_default);
+}
+
+.button:hover {
+    background-color: var(--bg_body);
+}
+
+.icon {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.intro {
+    /* padding:5px 0px; */
+    /* background-color: var(--bg_default); */
+    display:flex;
+    justify-content: center;
+    
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro h1 {
+    color : var(--brand-secondary);
+    font-weight:700;
+}
+
+.intro p {
+    font-weight: 300;
+    color : var(--text-color);
+}
+
+.triangle-a {
+    height: 60px;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+    background: linear-gradient(to right, #066caa 0%, #04849d 20%, #03a08d 100%);
+}
+.triangle-b {
+    width: 100%;
+    position:absolute;
+    height: 60px;
+    clip-path: polygon(100% 100%, 100% 0%, 0% 0%);
+    background-color: var(--brand-secondary);
+}
