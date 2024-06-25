@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="variables.css">
 		<link rel="stylesheet" type="text/css" href="header.css">
 		<link rel="stylesheet" type="text/css" href="details.css">
+		<link rel="stylesheet" type="text/css" href="favorites.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
@@ -20,7 +21,7 @@
 							<img src="icons/moon.svg" class="icon" alt="Moon Logo">
 							<span class="button-text">Dark Mode</span>
 						</button>
-						<button class="button">
+						<button class="button" id="favoritesButton">
 							<img src="icons/heart.svg" class="icon" alt="Heart Logo">
 							<span class="button-text">Favourites</span>
 						</button>
@@ -57,18 +58,41 @@
                 </div>
             </div>
             <div class="subtopics">
-                <div class="sub-title">HTML Sub Topics</div>
-                <div class="subtopic">HTML syntax and structure</div>
-                <div class="subtopic">HTML elements and attributes</div>
-                <div class="subtopic">HTML forms and input elements</div>
-                <div class="subtopic">HTML tables and lists</div>
-                <div class="subtopic">HTML multimedia elements (audio, video, images)</div>
-                <div class="subtopic">HTML accessibility and semantic markup</div>
+                <h2 class="subtitle">HTML Sub Topics</h2>
+                <div class="subtopic">✅HTML syntax and structure</div>
+                <div class="subtopic">✅HTML elements and attributes</div>
+                <div class="subtopic">✅HTML forms and input elements</div>
+                <div class="subtopic">✅HTML tables and lists</div>
+                <div class="subtopic">✅HTML multimedia elements (audio, video, images)</div>
+                <div class="subtopic">✅HTML accessibility and semantic markup</div>
             </div>
         </main>
         <footer class="footer">
 			Developed with ❤️ &#169; 2024
 		</footer>
+		<section class="favourites-section" id="favoritesSection">
+			<h2>My Favourite Topics</h2>
+			<div class="favourites-container">
+				<div class="favourite-card">
+					<div class="image-container">
+					<img class="favorite-image" src="images/react.webp" alt="React">
+					</div>
+					<div class="favourite-info">
+						<h3>React</h3>
+						<p>⭐⭐⭐⭐⭐</p>
+					</div>
+				</div>
+				<div class="favourite-card">
+					<div class="image-container">
+					<img class="favorite-image" src="images/react.webp" alt="React">
+					</div>
+					<div class="favourite-info">
+						<h3>React</h3>
+						<p>⭐⭐⭐⭐⭐</p>
+					</div>
+				</div>
+			</div>
+		</section>
 		<script src="index.js"></script>
 	</body>
 </html>

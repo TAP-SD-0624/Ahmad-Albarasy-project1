@@ -10,7 +10,7 @@
 	--text-color :black;
   }
   
-  body.light-mode {
+  body.light {
     --brand-primary: #0768ac;
     --brand-secondary: #03c180;
     --bg_default: #ffffff;
