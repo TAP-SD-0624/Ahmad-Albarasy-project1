@@ -1,15 +1,21 @@
 const resultsContainer = document.querySelector('.results-container');
 const resultsNumber = document.getElementById('resultsNumber');
 
-async function retreiveCourses (filePath) {
+async function loadContent (filePath) {
     const response = await fetch(filePath);
-    const jsonData = await response.json();
-    appendCards(jsonData);
-    const cards = document.querySelectorAll('.card');
-    resultsNumber.innerHTML = `"${cards.length}" Web Topics Found`;
-    cards.forEach((card) =>{
-        card.addEventListener('click', () => window.open('courseDetails.html', '_self'));
-    });
+    if (!response.ok){
+        console.error("Data retrival failed :(");
+        resultsContainer.innerHTML = "Something went wrong";
+    }
+    else {
+        const jsonData = await response.json();
+        appendCards(jsonData);
+        const cards = document.querySelectorAll('.card');
+        resultsNumber.innerHTML = `"${cards.length}" Web Topics Found`;
+        cards.forEach((card) =>{
+            card.addEventListener('click', () => window.open('courseDetails.html', '_self'));
+        });
+    }
 }
 
 function appendCards(data) {
@@ -33,4 +39,4 @@ function appendCards(data) {
     });
 }
 
-retreiveCourses('./api/topics.json');
+loadContent('./api/topics.json');
