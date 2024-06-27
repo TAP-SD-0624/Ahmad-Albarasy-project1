@@ -13,7 +13,7 @@ async function loadContent (filePath) {
         const cards = document.querySelectorAll('.card');
         resultsNumber.innerHTML = `"${cards.length}" Web Topics Found`;
         cards.forEach((card) =>{
-            card.addEventListener('click', () => window.open('courseDetails.html', '_self'));
+            card.addEventListener('click', () => window.open(`courseDetails.html?id=${card.getAttribute('topicID')}`, '_self'));
         });
     }
 }
@@ -22,7 +22,7 @@ function appendCards(data) {
     data.forEach(item => {
         const card = document.createElement('div');
         card.className = 'card';
-
+        card.setAttribute("topicID", item.id);
         card.innerHTML = `
             <div class="image-frame">
                 <img class="card-image" src="images/${item.image}" alt="${item.topic}">
