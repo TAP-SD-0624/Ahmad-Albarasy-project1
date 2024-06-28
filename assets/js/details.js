@@ -72,11 +72,12 @@ async function loadContent (filePath) {
 
 function addOrRemoveFavorite() {
     let favorites = JSON.parse(localStorage.getItem('favorites'));
+    console.log(favorites);
     let topicID = detailsSection.getAttribute('topicid');
-    if (favorites === null){
+    if (!favorites){
         const favoritesObject = {};
         favoritesObject[topicID] = "1";
-        localStorage.setItem('favorites', JSON.stringify(favorites));
+        localStorage.setItem('favorites', JSON.stringify(favoritesObject));
     }
     else if (!favorites[topicID]){
         favorites[topicID] = '1';
