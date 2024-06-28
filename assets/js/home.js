@@ -1,15 +1,15 @@
+import {loadData} from './dataFetch.js';
 const resultsContainer = document.querySelector('.results-container');
 const resultsNumber = document.getElementById('resultsNumber');
 
 async function loadContent (filePath) {
-    const response = await fetch(filePath);
-    if (!response.ok){
+    const data = await loadData(filePath);
+    if (!data){
         console.error("Data retrival failed :(");
         resultsContainer.innerHTML = "Something went wrong";
     }
     else {
-        const jsonData = await response.json();
-        appendCards(jsonData);
+        appendCards(data);
         const cards = document.querySelectorAll('.card');
         resultsNumber.innerHTML = `"${cards.length}" Web Topics Found`;
         cards.forEach((card) =>{
