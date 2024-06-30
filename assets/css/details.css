@@ -24,10 +24,6 @@ body {
     padding: 10px 20%;
 }
 
-.details-section {
-    flex-basis: 60%;
-}
-
 .card {
     color:black;
     max-width: 250px;
@@ -103,12 +99,22 @@ body {
 }
 
 @media (max-width: 560px) {
+    .course-details {
+        flex-direction: column;
+    }
+    .card {
+        margin-bottom: 0px;
+        width :100%;
+    }
     .button-text {
       display: none;
     }
-    .search-container {
+    .favourites-container {
         flex-direction: column;
         align-items: stretch;
+    }
+    .favourites-section {
+        overflow-y: auto;
     }
     .icon {
         width: 25px;
